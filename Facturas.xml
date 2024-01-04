@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Facturas>
+  <Compra>
+    <Producto Cantidad="11" Precio="10890">Iphone 14</Producto>
+    <Fecha>27/02/2023 07:30:37 p. m.</Fecha>
+  </Compra>
+</Facturas>

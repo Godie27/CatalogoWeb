@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WS/" targetNamespace="http://WS/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EnviarCorreo2" type="tns:EnviarCorreo2" />
+  <xs:element name="EnviarCorreo2Response" type="tns:EnviarCorreo2Response" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="EnviarCorreo2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CorreoDestino" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="productos" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cantidades" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="subtotales" type="xs:anyType" />
+      <xs:element minOccurs="0" name="total" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EnviarCorreo2Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
